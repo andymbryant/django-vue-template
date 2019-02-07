@@ -9,18 +9,18 @@
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+      <Posts/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Posts from "./components/Posts";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Posts
   },
   data() {
     return {};
