@@ -4,9 +4,9 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('backend.urls')),
     path('',
          TemplateView.as_view(template_name="application.html"),
          name="app",
-         )
+         ),
+    path('', include('backend.urls'))
 ]
