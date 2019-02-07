@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'backend',
     'webpack_loader',
 ]
 
@@ -76,6 +78,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
         'OPTIONS': {
             'read_default_file': os.path.join(BASE_DIR, 'my.cnf'),
         },
